@@ -1,0 +1,39 @@
+{
+  "name": "@t50-systems/pi-error-aggregator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "On-demand, redacted error aggregation across Pi session files",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T50-Systems/pi-error-aggregator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/T50-Systems/pi-error-aggregator/issues"
+  },
+  "homepage": "https://github.com/T50-Systems/pi-error-aggregator#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": ["pi", "pi-package", "pi-extension", "errors", "sessions"],
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "files": ["src", "README.md"],
+  "scripts": {
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run typecheck && npm test"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.80.7",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.0.0"
+  }
+}
