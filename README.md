@@ -57,6 +57,6 @@ Aborted/cancelled operations are not classified as failures.
 ## Development
 
 ```bash
-npm install
-npm run verify
+pnpm install --frozen-lockfile
+pnpm run verify
 ```
