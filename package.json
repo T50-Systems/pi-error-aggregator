@@ -16,15 +16,26 @@
   "engines": {
     "node": ">=22"
   },
-  "keywords": ["pi", "pi-package", "pi-extension", "errors", "sessions"],
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-extension",
+    "errors",
+    "sessions"
+  ],
   "pi": {
-    "extensions": ["./src/index.ts"]
+    "extensions": [
+      "./src/index.ts"
+    ]
   },
-  "files": ["src", "README.md"],
+  "files": [
+    "src",
+    "README.md"
+  ],
   "scripts": {
     "test": "tsx --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",
-    "verify": "npm run typecheck && npm test"
+    "verify": "pnpm run typecheck && pnpm test"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
@@ -35,5 +46,6 @@
     "@types/node": "^22.0.0",
     "tsx": "^4.20.0",
     "typescript": "^5.0.0"
-  }
+  },
+  "packageManager": "pnpm@10.34.9"
 }

@@ -6,8 +6,8 @@
 4. Run:
 
 ```bash
-npm install
-npm run verify
+pnpm install --frozen-lockfile
+pnpm run verify
 npm pack --dry-run
 ```
 
